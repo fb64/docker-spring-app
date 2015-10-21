@@ -59,7 +59,7 @@ public class DogePhotoManipulator implements PhotoManipulator {
 	private final List<TextOverlay> textOverlays = new ArrayList<>();
 
 	public DogePhotoManipulator() {
-		this(readClassImage("/doge-logo.png"));
+		this(readClassImage("/docker-logo.png"));
 	}
 
 	public DogePhotoManipulator(BufferedImage dogeLogo) {
