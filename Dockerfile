@@ -1,6 +1,6 @@
 FROM java:8
 
-MAINTAINER Patrick Chanezon <patrick@chanezon.com>
+MAINTAINER Florian Bernard <florian.bernard@capgemini.com>
 
 EXPOSE 8080
 
