@@ -74,7 +74,7 @@ public class Application {
     @Bean
     InitializingBean populateTestData(UserRepository repository) {
         return () -> {
-            repository.save(new User("philwebb", "Phil Webb"));
+            repository.save(new User("fbernard", "Florian Bernard"));
             repository.save(new User("joshlong", "Josh Long"));
             repository.findAll().forEach(System.err::println);
         };
@@ -101,7 +101,7 @@ public class Application {
 
         // see bit.ly/spring-boot-metrics for more on the
         // DropWizard & Spring Boot integration
-        @Bean
+        /*@Bean
         public GraphiteReporter graphiteReporter(
                 MetricRegistry registry,
                 @Value("${graphite.host}") String host,
@@ -113,7 +113,7 @@ public class Application {
                     .build(new Graphite(host, port));
             reporter.start(2, TimeUnit.SECONDS);
             return reporter;
-        }
+        }*/
     }
 
     public static void main(String[] args) {
