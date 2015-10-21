@@ -179,7 +179,7 @@ public class DogePhotoManipulator implements PhotoManipulator {
 			renderText(g, "very " + this.very, 29, Color.GREEN, 105, r * 115);
 			renderText(g, "so " + this.so, 20, Color.MAGENTA, 25, r * 330);
 			renderText(g, "such " + this.such, 30, Color.ORANGE, 125, r * 385);*/
-			renderText(g, "Dockerized photo", 29, Color.GREEN, 25, r * 115);
+			renderText(g, "Dockerized photo", 20, Color.GREEN, 25, r * 115);
 		}
 
 		private void renderText(Graphics2D g, String text, int fontSize, Paint paint,
